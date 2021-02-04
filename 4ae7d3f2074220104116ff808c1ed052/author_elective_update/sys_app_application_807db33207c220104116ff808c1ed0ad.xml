@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-04 20:57:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>807db33207c220104116ff808c1ed0ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CB Incidents</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VMware Carbon Black Cloud" source="x_345927_vmware_ca">4ae7d3f2074220104116ff808c1ed052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VMware Carbon Black Cloud">4ae7d3f2074220104116ff808c1ed052</sys_scope>
+        <sys_update_name>sys_app_application_807db33207c220104116ff808c1ed0ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-04 20:57:36</sys_updated_on>
+        <title>CB Incidents</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VMware Carbon Black Cloud">4ae7d3f2074220104116ff808c1ed052</application>
+        <file_path/>
+        <instance_id>82a9c930db96c8584d2bac44d496193c</instance_id>
+        <instance_name>dev96574</instance_name>
+        <name>sys_app_application_807db33207c220104116ff808c1ed0ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-02-04 20:57:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>807db33207c220104116ff808c1ed0ad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CB Incidents</sys_name><sys_overrides/><sys_package display_value="VMware Carbon Black Cloud" source="x_345927_vmware_ca">4ae7d3f2074220104116ff808c1ed052</sys_package><sys_policy/><sys_scope display_value="VMware Carbon Black Cloud">4ae7d3f2074220104116ff808c1ed052</sys_scope><sys_update_name>sys_app_application_807db33207c220104116ff808c1ed0ad</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-02-04 20:57:36</sys_updated_on><title>CB Incidents</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-2107423276</payload_hash>
+        <record_name>CB Incidents</record_name>
+        <reverted_from/>
+        <source>dee7d3f2074220104116ff808c1ed054</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-04 20:57:36</sys_created_on>
+        <sys_id>129df33207c220104116ff808c1ed0df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1776ed609d10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-04 20:57:36</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>5a9df332e1c220109fafe60d0e1dd4de</update_guid>
+        <update_guid_history>5a9df332e1c220109fafe60d0e1dd4de:-2107423276</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CB Incidents">620e7b3207c220104116ff808c1ed0aa</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-04 20:59:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>31d97cea44fb4b48b9972469c4952cc4</sys_id>
+        <sys_metadata>807db33207c220104116ff808c1ed0ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CB Incidents</sys_name>
+        <sys_package display_value="VMware Carbon Black Cloud" source="x_345927_vmware_ca">4ae7d3f2074220104116ff808c1ed052</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="VMware Carbon Black Cloud">4ae7d3f2074220104116ff808c1ed052</sys_scope>
+        <sys_scope_delete display_value="">12f88e0c74fa4530830ea44c15b84900</sys_scope_delete>
+        <sys_update_name>sys_app_application_807db33207c220104116ff808c1ed0ad</sys_update_name>
+        <sys_update_version display_value="sys_app_application_807db33207c220104116ff808c1ed0ad">129df33207c220104116ff808c1ed0df</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-04 20:59:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
