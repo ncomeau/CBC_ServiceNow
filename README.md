@@ -2,7 +2,7 @@
 
 ## Instructions
 ​
-### 1. Configure Cb-SDK  
+### 1. Configure CBC-SDK  
  * Instructions here: https://carbon-black-cloud-python-sdk.readthedocs.io/en/latest/installation/
  * Download associated [cbc_servicenow_v2.py]() & [servicenow.yaml]().
 ​
