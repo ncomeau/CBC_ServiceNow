@@ -21,24 +21,23 @@
 ​
 ### 4. Configure API Credentials File
  * Please follow instructions as outlined here: https://carbon-black-cloud-python-sdk.readthedocs.io/en/latest/authentication/
-   * It is _highly recommended_ that you leverage the 'file' open, with the name 'credentials.cbc'
+   * It is _highly recommended_ that you leverage the 'file' option, with the name 'credentials.cbc'
    * Example:
       * [TH_alerts]
       * url = https://api-prod05.conferdeploy.net
       * token = BZNA2UIHODBABT53GBNZL/9NASABOL4
       * org_key = N4LF97SHZ
       * ssl_verify = True
-       
+​       
 ### 5. Configure servicenow.yaml File
   * Edit servicenow.yaml file with the following:
     * (line 4) Add in cb-sdk profile created in step 4
     * (lines 11 & 12) Input in your ServiceNow Username and Password
     * (line 16) Update the sn_url to the URL of your ServiceNow org
       * Note: Do not change the app service name specified on the end of the URL, just the org name
-      
+ ​     
 ### 6. Run Associated cbc_servicenow_v2.py Script
   * Assuming above configurations are followed, and the ServiceNow App has been imported, the script should run on a loop
   * This script will check every 60 seconds, by default (configurable), if there is a new CBC Alert available
-  * If there is an alert, that alert will get fed into ServiceNow, in the form of an Incident Ticket
-       
+  * If there is an alert, that alert will get fed into ServiceNow, in the form of an Incident Ticket     
 ​
