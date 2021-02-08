@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="92" text_index="true" type="collection">
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="98" text_index="true" type="collection">
         <element label="Actions" max_length="4000" name="x_345927_vmware_ca_actions" type="script"/>
         <element attributes="edge_encryption_enabled=true" label="Alert Type" max_length="100" name="x_345927_vmware_ca_alert_type" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="App Hash" max_length="100" name="x_345927_vmware_ca_app_hash" type="string"/>

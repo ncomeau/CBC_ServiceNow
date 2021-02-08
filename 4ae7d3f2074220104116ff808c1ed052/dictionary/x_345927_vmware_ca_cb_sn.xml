@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="cb_sn" max_length="40" name="x_345927_vmware_ca_cb_sn" type="collection">
+    <element extends="sys_import_set_row" label="cb_sn" max_length="40" name="x_345927_vmware_ca_cb_sn" sizeclass="6" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=u_actions" label="Actions" max_length="100" name="u_actions" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=u_alert_type" label="Alert Type" max_length="100" name="u_alert_type" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=u_app_hash" label="App Hash" max_length="100" name="u_app_hash" type="string"/>
