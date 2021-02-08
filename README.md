@@ -4,7 +4,7 @@
 ​
 ### 1. Configure Cb-SDK  
  * Instructions here: https://carbon-black-cloud-python-sdk.readthedocs.io/en/latest/installation/
- * Download associated [cbc_servicenow_v2.py] & [servicenow.yaml]().
+ * Download associated [cbc_servicenow_v2.py]() & [servicenow.yaml]().
 ​
 ### 2. In the Carbon Black Cloud Console, create a CBC API Key
  * Navigate in CBC Console to **Settings > API Access > Add API Key**
