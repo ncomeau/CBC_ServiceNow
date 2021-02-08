@@ -1,0 +1,16 @@
+creds:
+    # CB Creds - Make sure this is the cbapi profile for a "SIEM" connector
+    cb:
+      cb_profile : "TH_alerts"
+
+
+    # SN Creds - These are your login info
+    # IF you are using a dev instance, they were given to you on first creation
+    # For SN dev instance they should be "admin" for user and then a randomized string assigned to you for pwd
+    sn:
+      sn_user: "admin"
+      sn_pwd: "ywpwUxMHFJ87"
+
+      # Please edit ONLY the dev name this field - the app service name is dictated by the imported source code from github
+      # i.e. "https://<your sn instance>.service-now.com/api/now/import/x_345927_vmware_ca_cb_sn"
+      sn_url: "https://dev1234.service-now.com/api/now/import/x_345927_vmware_ca_cb_sn"

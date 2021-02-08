@@ -1,0 +1,77 @@
+{
+    "deviceInfo": {
+        "deviceHostName": null,
+        "deviceId": 17130101,
+        "deviceName": "Nicholass-MBP",
+        "deviceType": "MAC",
+        "deviceVersion": "pscr-sensor",
+        "email": "nccomeau2@gmail.com",
+        "externalIpAddress": "108.7.195.119",
+        "groupName": "Monitored",
+        "internalIpAddress": "192.168.1.165",
+        "targetPriorityCode": 0,
+        "targetPriorityType": "MEDIUM",
+        "uemId": "1A5DB22E-2F44-539D-800B-56E08FDD8A91"
+    },
+    "eventDescription": "[TH Alert] [Carbon Black has detected one or more threat indicator(s) on one of your devices.]  [https://defense-prod05.conferdeploy.net/threat-hunter/analyze?processGUID=N4LF46ZN-01056275-0000014a-00000000-1d69816478f89a0&deviceId=17130101] [Process Google Chrome was detected by the report \"Persistence - macOS Chrome - Installed Extensions\" in watchlist \"Carbon Black Endpoint Suspicious Indicators\"] [Group: Monitored] [Device Email: nccomeau2@gmail.com] [Device Name: Nicholass-MBP] [Device Type: MAC] [IOC: bf81970a-4037-4bfe-8cd2-8ed175745502-0] [Severity: 5]",
+    "eventTime": 1612288246782,
+    "ruleName": "TH Alert",
+    "threatHunterInfo": {
+        "count": 0,
+        "dismissed": false,
+        "documentGuid": "sD8MqD4kQVOtiWG5jC-wbQ",
+        "firstActivityTime": 1612288246782,
+        "incidentId": "N4LF46ZN-01056275-0000014a-00000000-1d69816478f89a0-A7CC923DC3F7D5A8C0F4E95F9C41E60B",
+        "indicators": [
+            {
+                "applicationName": "Google Chrome",
+                "indicatorName": "bf81970a-4037-4bfe-8cd2-8ed175745502-0",
+                "sha256Hash": "c2714e1ca05b743dc79d33d452a0dec2ed90568dde6c9cac4bb45acac2829e68"
+            }
+        ],
+        "iocId": "bf81970a-4037-4bfe-8cd2-8ed175745502-0",
+        "lastUpdatedTime": 1612288507180,
+        "md5": null,
+        "orgId": 5499,
+        "policyId": 42627,
+        "processGuid": "N4LF46ZN-01056275-0000014a-00000000-1d69816478f89a0",
+        "processPath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "reportId": "FFAGQQZQRmOhg0clEA5V1g-bf81970a-4037-4bfe-8cd2-8ed175745502",
+        "reportName": "Persistence - macOS Chrome - Installed Extensions",
+        "reputation": "NOT_LISTED",
+        "responseAlarmId": "572090ab-43f3-4eca-af99-2a8e4388e5b6",
+        "responseSeverity": 5,
+        "runState": "RAN",
+        "score": 5,
+        "sha256": "c2714e1ca05b743dc79d33d452a0dec2ed90568dde6c9cac4bb45acac2829e68",
+        "status": "UNRESOLVED",
+        "summary": "Process Google Chrome was detected by the report \"Persistence - macOS Chrome - Installed Extensions\" in watchlist \"Carbon Black Endpoint Suspicious Indicators\"",
+        "tags": null,
+        "targetPriority": "MEDIUM",
+        "threatCause": {
+            "actor": "c2714e1ca05b743dc79d33d452a0dec2ed90568dde6c9cac4bb45acac2829e68",
+            "actorName": "Google Chrome",
+            "actorProcessPPid": null,
+            "actorType": null,
+            "causeEventId": null,
+            "detectionGuid": null,
+            "originSourceType": "UNKNOWN",
+            "parentGuid": null,
+            "processGuid": null,
+            "reason": "Process Google Chrome was detected by the report \"Persistence - macOS Chrome - Installed Extensions\" in watchlist \"Carbon Black Endpoint Suspicious Indicators\"",
+            "reputation": "NOT_LISTED",
+            "threatCategory": "RESPONSE_WATCHLIST"
+        },
+        "threatId": "E9FC9AD1815642F018A5FFB5A721D12E",
+        "time": 1612288522677,
+        "watchLists": [
+            {
+                "alert": true,
+                "id": "ieNW8ziwQUO21FR8Jmvr3A",
+                "name": "Carbon Black Endpoint Suspicious Indicators"
+            }
+        ]
+    },
+    "type": "THREAT_HUNTER",
+    "url": "https://defense-prod05.conferdeploy.net/cb/investigate/processes?query=process_guid:N4LF46ZN-01056275-0000014a-00000000-1d69816478f89a0%20AND%20device_id:17130101%20AND%20report_id:FFAGQQZQRmOhg0clEA5V1g-bf81970a-4037-4bfe-8cd2-8ed175745502&searchWindow=ALL&orgId=5499"
+}
