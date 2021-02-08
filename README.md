@@ -8,7 +8,7 @@
  * Select 'Basic Auth Credentials'
   * _Oauth 2.0 is the recommended best practice - but I opted for Basic for ease of showcasing integration_
  * Input in the following:
-  * Name for Creds (I tend to go with 'Github - <github username>'
+  * Name for Creds (I tend to go with 'Github - (insert github username)'
   * Your github username
   * Your github password
  * Select 'Submit'
