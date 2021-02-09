@@ -14,7 +14,7 @@ This is the v2 iteration of my attempts to create a ServiceNow app for the Carbo
   
 ### ServiceNow Component
 
-_You can find the full installation instructions within the README.md in the cb_sn branch of this repo. It is recommended that this portion be installed first - in order to allow for any applicable variable alerteration within the yaml config file._
+_You can find the full installation instructions within the README.md in the **cb_sn branch** of this repo. It is recommended that this portion be installed first - in order to allow for any applicable variable alerteration within the yaml config file._
 
 The application itself, which you will import in, is comprised of several componets, all of which are pre-configured;
   * Table Creation:
@@ -29,7 +29,7 @@ The application itself, which you will import in, is comprised of several compon
     
 ### Carbon Black Python Script & Yaml Config File
 
-_You can find the full installation instructions within the README.md in the cb_python branch of this repo._
+_You can find the full installation instructions within the README.md in the **cb_python branch** of this repo._
 
 This script leverages the cbc-sdk (or legacy cbapi) 'notification_listener' to periodically check for any new Alert Notifications within the CBC console. Once an alert is generated, it is then dumped to a temp json file - which is then reopened for parsing out of key fields. These fields are extracted out of the json, and then formatted based on table index fields created within the ServiceNow App.
 
