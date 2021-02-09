@@ -1,6 +1,7 @@
 # CBC_ServiceNow
 
 [![CBC_SN_v2_Setup+Demo](https://j.gifs.com/K1PPDJ.gif)](https://youtu.be/GmKztot8LsU)
+_Click on GIF for full setup+demo video, or read the instructions below/on each branch_
 
 ## Introduction
 
