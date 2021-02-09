@@ -1,5 +1,7 @@
 # CBC_ServiceNow
 
+[![CBC_SN_v2_Setup+Demo](https://j.gifs.com/K1PPDJ.gif)](https://youtu.be/GmKztot8LsU)
+
 ## Introduction
 
 This is the v2 iteration of my attempts to create a ServiceNow app for the Carbon Black Cloud. With helpful input from the likes of Ryan Fortress, Jon Nelson, and Jacob Barosin - this iteration leverages 2 primary components;
