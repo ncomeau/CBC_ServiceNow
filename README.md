@@ -5,7 +5,7 @@
 This is the v2 iteration of my attempts to create a ServiceNow app for the Carbon Black Cloud. With helpful input from the likes of Ryan Fortress, Jon Nelson, and Jacob Barosin - this iteration leverages 2 primary components;
   * A ServiceNow Studio Custom Application 
   * A Carbon Black Cloud python script & yaml config file
-   * Which facilitates the transfer of data from the CBC REST API, to the aforementioned ServiceNow Custom App
+    * Which facilitates the transfer of data from the CBC REST API, to the aforementioned ServiceNow Custom App
   
 ### ServiceNow Component
 
