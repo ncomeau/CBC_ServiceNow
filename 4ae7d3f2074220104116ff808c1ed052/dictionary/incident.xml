@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="98" text_index="true" type="collection">
+        <element label="Actions" max_length="4000" name="x_345927_vmware_ca_actions" type="script"/>
+        <element attributes="edge_encryption_enabled=true" label="Alert Type" max_length="100" name="x_345927_vmware_ca_alert_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="App Hash" max_length="100" name="x_345927_vmware_ca_app_hash" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="App Name" max_length="300" name="x_345927_vmware_ca_app_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="App Reputation" max_length="100" name="x_345927_vmware_ca_app_reputation" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CBC Incident ID" max_length="200" name="x_345927_vmware_ca_cbc_incident_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CBC IOC" max_length="4000" name="x_345927_vmware_ca_cbc_ioc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CBC Policy" max_length="100" name="x_345927_vmware_ca_cbc_policy" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CBC Report Name" max_length="200" name="x_345927_vmware_ca_cbc_report_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CBC URL" max_length="1024" name="x_345927_vmware_ca_cbc_url" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="CBC WatchList" max_length="200" name="x_345927_vmware_ca_cbc_watchlist" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device ID" max_length="40" name="x_345927_vmware_ca_device_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device Name" max_length="100" name="x_345927_vmware_ca_device_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device OS" max_length="100" name="x_345927_vmware_ca_device_os" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Event ID" max_length="1000" name="x_345927_vmware_ca_event_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="External IP" max_length="40" name="x_345927_vmware_ca_external_ip" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Internal IP" max_length="40" name="x_345927_vmware_ca_internal_ip" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Live Response" max_length="1024" name="x_345927_vmware_ca_live_response" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Process Guid" max_length="4000" name="x_345927_vmware_ca_process_guid" type="string"/>
+        <element attributes="pdf_cell_type=image" label="Run Status" max_length="40" name="x_345927_vmware_ca_run_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="TTPs" max_length="4000" name="x_345927_vmware_ca_ttps" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="User" max_length="100" name="x_345927_vmware_ca_user" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Virus Total Lookup" max_length="1024" name="x_345927_vmware_ca_virus_total_lookup" type="url"/>
+    </element>
+</database>

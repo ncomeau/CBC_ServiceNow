@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Web Services">18f23e670a0a0b2400c55b122be52373</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint>User customized web service</hint>
+        <homepage/>
+        <image>images/icons/web_services_mapped.gifx</image>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>cbc_sn_inbound</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>1050</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>v_ws_editor.do?sysparm_query=name=x_345927_vmware_ca_cbc_sn_inbound</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-04 21:22:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3a43480707c220104116ff808c1ed064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cbc_sn_inbound</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VMware Carbon Black Cloud" source="x_345927_vmware_ca">4ae7d3f2074220104116ff808c1ed052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VMware Carbon Black Cloud">4ae7d3f2074220104116ff808c1ed052</sys_scope>
+        <sys_update_name>sys_app_module_3a43480707c220104116ff808c1ed064</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-04 21:22:29</sys_updated_on>
+        <timeline_page/>
+        <title>cbc_sn_inbound</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VMware Carbon Black Cloud">4ae7d3f2074220104116ff808c1ed052</application>
+        <file_path/>
+        <instance_id>82a9c930db96c8584d2bac44d496193c</instance_id>
+        <instance_name>dev96574</instance_name>
+        <name>sys_app_module_3a43480707c220104116ff808c1ed064</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Web Services">18f23e670a0a0b2400c55b122be52373</application><assessment/><device_type/><filter/><hint>User customized web service</hint><homepage/><image>images/icons/web_services_mapped.gifx</image><link_type>DIRECT</link_type><map_page/><mobile_title>cbc_sn_inbound</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>1050</order><override_menu_roles>false</override_menu_roles><query>v_ws_editor.do?sysparm_query=name=x_345927_vmware_ca_cbc_sn_inbound</query><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-02-04 21:22:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3a43480707c220104116ff808c1ed064</sys_id><sys_mod_count>0</sys_mod_count><sys_name>cbc_sn_inbound</sys_name><sys_overrides/><sys_package display_value="VMware Carbon Black Cloud" source="x_345927_vmware_ca">4ae7d3f2074220104116ff808c1ed052</sys_package><sys_policy/><sys_scope display_value="VMware Carbon Black Cloud">4ae7d3f2074220104116ff808c1ed052</sys_scope><sys_update_name>sys_app_module_3a43480707c220104116ff808c1ed064</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-02-04 21:22:29</sys_updated_on><timeline_page/><title>cbc_sn_inbound</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>486317156</payload_hash>
+        <record_name>cbc_sn_inbound</record_name>
+        <reverted_from/>
+        <source>f3704c4307c220104116ff808c1ed043</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-04 21:22:29</sys_created_on>
+        <sys_id>ba43480707c220104116ff808c1ed066</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1776eecd1090000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-04 21:22:29</sys_updated_on>
+        <type>Module</type>
+        <update_guid>f24348071dc220109dd8ed80274ffb66</update_guid>
+        <update_guid_history>f24348071dc220109dd8ed80274ffb66:486317156</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="cbc_sn_inbound">8e04044707c220104116ff808c1ed070</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-04 21:25:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>498cb51f317141309d0c60053cc87240</sys_id>
+        <sys_metadata>3a43480707c220104116ff808c1ed064</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cbc_sn_inbound</sys_name>
+        <sys_package display_value="VMware Carbon Black Cloud" source="x_345927_vmware_ca">4ae7d3f2074220104116ff808c1ed052</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="VMware Carbon Black Cloud">4ae7d3f2074220104116ff808c1ed052</sys_scope>
+        <sys_scope_delete display_value="">12f88e0c74fa4530830ea44c15b84900</sys_scope_delete>
+        <sys_update_name>sys_app_module_3a43480707c220104116ff808c1ed064</sys_update_name>
+        <sys_update_version display_value="sys_app_module_3a43480707c220104116ff808c1ed064">ba43480707c220104116ff808c1ed066</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-04 21:25:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

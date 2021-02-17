@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_345927_vmware_ca_event_id" label="Event ID" language="en" table="incident">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_345927_vmware_ca_event_id</element>
+            <help/>
+            <hint/>
+            <label>Event ID</label>
+            <language>en</language>
+            <name>incident</name>
+            <plural>Event IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-04 19:50:12</sys_created_on>
+            <sys_id>ba2e6336078220104116ff808c1ed010</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Event ID</sys_name>
+            <sys_package display_value="VMware Carbon Black Cloud" source="x_345927_vmware_ca">4ae7d3f2074220104116ff808c1ed052</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="VMware Carbon Black Cloud">4ae7d3f2074220104116ff808c1ed052</sys_scope>
+            <sys_update_name>sys_documentation_incident_x_345927_vmware_ca_event_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-04 19:50:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
