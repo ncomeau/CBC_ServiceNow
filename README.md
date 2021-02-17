@@ -26,8 +26,7 @@ The application itself, which you will import in, is comprised of several compon
       * 'Carbon Black Cloud - Alert Info'
   * Inbound Webservice
     * This is the critical; as it acts as the means of faciliating the alert info gathered by the python script (which calls the CBC RESTapi), and proceeds to populate it into the fields created in the steps above
-
-
+​
 ### ServiceNow App Setup Instructions
 ​
 #### 1. Configure Github Creds in ServiceNow
@@ -75,9 +74,9 @@ The application itself, which you will import in, is comprised of several compon
    * CBC WatchList
    * CBC Report Name
    * CBC URL
-    
+​    
 ## Carbon Black Component
-
+​
 _You can find the full installation instructions within the README.md in the **cb_python branch** of this repo._
 
 This script leverages the cbc-sdk (or legacy cbapi) 'notification_listener' to periodically check for any new Alert Notifications within the CBC console. Once an alert is generated, it is then dumped to a temp json file - which is then reopened for parsing out of key fields. These fields are extracted out of the json, and then formatted based on table index fields created within the ServiceNow App.
