@@ -5,16 +5,16 @@
 
 ## Introduction
 
-_Click on GIF for full setup+demo video, or read the instructions below/on each branch_
+_Click on GIF for full setup+demo video, or read the instructions below_
 
-This is the v2 iteration of my attempts to create a ServiceNow app for the Carbon Black Cloud. With helpful input from the likes of Ryan Fortress, Jon Nelson, and Jacob Barosin - this iteration leverages 2 primary components;
+This is the v2 iteration of my attempts to create a ServiceNow app for the Carbon Black Cloud. With helpful input from the likes of Alex Van Brunt, Ryan Fortress, Jon Nelson, and Jacob Barosin - this iteration leverages 2 primary components;
   * A ServiceNow Studio Custom Application 
   * A Carbon Black Cloud python script & yaml config file
     * Which facilitates the transfer of data from the CBC REST API, to the aforementioned ServiceNow Custom App
   
 ## ServiceNow Component
 
-_You can find the full installation instructions within the README.md in the **cb_sn branch** of this repo. It is recommended that this portion be installed first - in order to allow for any applicable variable alerteration within the yaml config file._
+_It is recommended that this portion be installed first - in order to allow for any applicable variable alerteration within the yaml config file._
 
 The application itself, which you will import in, is comprised of several componets, all of which are pre-configured;
   * Table Creation:
@@ -29,7 +29,7 @@ The application itself, which you will import in, is comprised of several compon
 
 
 ### ServiceNow App Setup Instructions
-
+​
 #### 1. Configure Github Creds in ServiceNow
  * In ServiceNow, search 'Credentials' - Navigate to 'Connections & Credentials' --> 'Credentials'
  * Select 'New'
@@ -76,10 +76,54 @@ The application itself, which you will import in, is comprised of several compon
    * CBC Report Name
    * CBC URL
     
-### Carbon Black Python Script & Yaml Config File
+## Carbon Black Component
 
 _You can find the full installation instructions within the README.md in the **cb_python branch** of this repo._
 
 This script leverages the cbc-sdk (or legacy cbapi) 'notification_listener' to periodically check for any new Alert Notifications within the CBC console. Once an alert is generated, it is then dumped to a temp json file - which is then reopened for parsing out of key fields. These fields are extracted out of the json, and then formatted based on table index fields created within the ServiceNow App.
 
 Once the body of the post is formatted, a simple request call is made to the ServiceNow Inbound Webservice created within the ServiceNow App, as mentioned above. Then, an Incident Ticket is created within ServiceNow, and the UI additions regarding ticket details are populated with the corresponding CBC alert and device data.
+
+
+### CB Python Script Setup Instructions
+​
+#### 1. Configure CBC-SDK  
+ * Instructions here: https://carbon-black-cloud-python-sdk.readthedocs.io/en/latest/installation/
+ * Download associated [cbc_servicenow_v2.py]() & [servicenow.yaml]().
+    * You can leverage legacy cbapi, but alternation to the python script is required (lines 21 & 24) 
+​
+#### 2. In the Carbon Black Cloud Console, create a CBC API Key
+ * Navigate in CBC Console to **Settings > API Access > Add API Key**
+   * Create API Key with `‘Access Level’` SIEM
+   * Copy Keys Created for Configuration:
+      * API ID (Connector ID)
+      * API Secret Key (API Key)
+​
+#### 3. Create CBC Notification
+ * Navigate in CBC Console to **Settings > Notifications > Add Notification**
+ * Set-up desired notification
+   * You must make **both** an alert for Cb Standard and Cb Enterprise EDR, if you want to be alerted on both products
+ * Under “How do you want to be notified?” Select SIEM connector made in step 1, under API Keys
+​
+#### 4. Configure API Credentials File
+ * Please follow instructions as outlined here: https://carbon-black-cloud-python-sdk.readthedocs.io/en/latest/authentication/
+   * It is _highly recommended_ that you leverage the 'file' option, with the name 'credentials.cbc'
+   * Example:
+      * [TH_alerts]
+      * url = https://api-prod05.conferdeploy.net
+      * token = BZNA2UIHODBABT53GBNZL/9NASABOL4
+      * org_key = N4LF97SHZ
+      * ssl_verify = True
+​       
+#### 5. Configure servicenow.yaml File
+  * Edit servicenow.yaml file with the following:
+    * (line 4) Add in cb-sdk profile created in step 4
+    * (lines 11 & 12) Input in your ServiceNow Username and Password
+    * (line 16) Update the sn_url to the URL of your ServiceNow org
+      * Note: Do not change the app service name specified on the end of the URL, just the org name
+ ​     
+#### 6. Run Associated cbc_servicenow_v2.py Script
+  * Assuming above configurations are followed, and the ServiceNow App has been imported, the script should run on a loop
+  * This script will check every 60 seconds, by default (configurable), if there is a new CBC Alert available
+  * If there is an alert, that alert will get fed into ServiceNow, in the form of an Incident Ticket     
+​
