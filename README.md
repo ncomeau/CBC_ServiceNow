@@ -29,38 +29,44 @@ The application itself, which you will import in, is comprised of several compon
 ​
 ### ServiceNow App Setup Instructions
 ​
-#### 1. Configure Github Creds in ServiceNow
+#### 1. Fork Github Repo
+ * Since this is not yet an official ServiceNow app - you must import this app via Source Control in ServiceNow Studio (discussed below)
+ * Select 'Fork' option in the top right of this repo to create fork within your own github account (this will allow to alter the app if desired)
+   *  See [ServiceNow KB Article](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/servicenow_application_developer/app_store_learnv2_serviceportal_orlando_exercise_fork_repository_and_import_application_for_the_creating_custom_widgets_module) for full details
+   
+#### 2. Configure Github Creds in ServiceNow
  * In ServiceNow, search 'Credentials' - Navigate to 'Connections & Credentials' --> 'Credentials'
  * Select 'New'
  * Select 'Basic Auth Credentials'
-  * _Oauth 2.0 is the recommended best practice - but I opted for Basic for ease of showcasing integration_
+   * _Oauth 2.0 is the recommended best practice - but I opted for Basic for ease of showcasing integration_
  * Input in the following:
-  * Name for Creds (I tend to go with 'Github - (insert github username)'
-  * Your github username
-  * Your github password
+   * Name for Creds (I tend to go with 'Github - (insert github username)'
+   * Your github username
+   * Your github password
  * Select 'Submit'
  
-#### 2. Import App via Source Control
+#### 3. Import App via Source Control
  * In ServiceNow, search 'Studio' --> Launch Studio
  * On the 'Select Application' pop-up window, select 'Import from Source Control'
  * Input in the following:
-  * URL: https://github.com/ncomeau/CBC_ServiceNow
-  * Branch: cb_sn
-  * Credentials: Select creds created in step 1 above
+   * URL: url of forked repo 
+     * (Should look like https://github.com/your_github_user/CBC_ServiceNow.git)
+   * Branch: main
+   * Credentials: Select creds created in step 2 above
  * Select 'Import'
  * Upon completion of import, select 'Select Application'
  * Select 'VMware Carbon Black Cloud' application you just imported
  * Importing app should be completed, with all associated tables, indexes, UI designs, and web services built in!
  
-#### 3. Ensure it is enabled
+#### 4. Ensure it is enabled
 * Navigate back to your ServiceNow home page
 * Search 'VMware Carbon Black Cloud'
- * Select 'All' --> you should see what resembles the 'Incidents' table
- * Select an Incident name --> when looking at the additional details, you should see two new tabs;
-  * Carbon Black Cloud - Device Info
-  * Carbon Black Cloud - Alert Info
- * (Optional) Favorite this app by clicking the star icon
- * (Optional) Back on the main 'All' Screen, if you select the 'gear' icon you can choose which fields you would like displayed on the main table, my current fields are as follows:
+  * Select 'All' --> you should see what resembles the 'Incidents' table
+  * Select an Incident name --> when looking at the additional details, you should see two new tabs;
+    * Carbon Black Cloud - Device Info
+    * Carbon Black Cloud - Alert Info
+ * _(Optional)_ Favorite this app by clicking the star icon
+ * _(Optional)_ Back on the main 'All' Screen, if you select the 'Gear' icon you can choose which fields you would like displayed on the main table, my current fields are as follows:
    * Number
    * Opened
    * Category
@@ -77,8 +83,6 @@ The application itself, which you will import in, is comprised of several compon
 ​    
 ## Carbon Black Component
 ​
-_You can find the full installation instructions within the README.md in the **cb_python branch** of this repo._
-
 This script leverages the cbc-sdk (or legacy cbapi) 'notification_listener' to periodically check for any new Alert Notifications within the CBC console. Once an alert is generated, it is then dumped to a temp json file - which is then reopened for parsing out of key fields. These fields are extracted out of the json, and then formatted based on table index fields created within the ServiceNow App.
 
 Once the body of the post is formatted, a simple request call is made to the ServiceNow Inbound Webservice created within the ServiceNow App, as mentioned above. Then, an Incident Ticket is created within ServiceNow, and the UI additions regarding ticket details are populated with the corresponding CBC alert and device data.
