@@ -132,7 +132,7 @@ Once the body of the post is formatted, a simple request call is made to the Ser
 ​
 ## Deleting Application
 ​
-If, for whatever reason, you want to delete the application, and reimport the process is as follows:
+If, for whatever reason, you want to delete the application, and reimport, the process is as follows:
  * In ServiceNow search: 'System Applications'
    * Select 'My Company Applications'
    * Click on the 'VMware Carbon Black' Application
