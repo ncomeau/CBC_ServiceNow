@@ -130,3 +130,15 @@ Once the body of the post is formatted, a simple request call is made to the Ser
   * This script will check every 60 seconds, by default (configurable), if there is a new CBC Alert available
   * If there is an alert, that alert will get fed into ServiceNow, in the form of an Incident Ticket     
 ​
+## Deleting Application
+​
+If, for whatever reason, you want to delete the application, and reimport the process is as follows:
+ * In ServiceNow search: 'System Applications'
+   * Select 'My Company Applications'
+   * Click on the 'VMware Carbon Black' Application
+     * Select 'Delete' in the top right & type 'delete' into the prompt
+ * Once complete - navigate, in left hand panel, to 'My Application Import History'
+   * Select the entry for the CB app & use dropdown to select 'delete' action
+ * Once complete - search 'sys_repo_config.list' in the search bar
+   * Repeat above steps for selecting & deleting the CB app entry
+ * Follow steps above for re-import via studio if desired
