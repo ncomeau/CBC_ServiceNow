@@ -1,6 +1,6 @@
 # CBC_ServiceNow
 
-[![CBC_SN_v2_Setup+Demo](https://j.gifs.com/K1PPDJ.gif)](https://youtu.be/GmKztot8LsU)
+[![CBC_SN_v2_Setup+Demo](https://j.gifs.com/K1PPDJ.gif)](https://youtu.be/c30jxm0XqZ8)
 ​
 
 ## Introduction
