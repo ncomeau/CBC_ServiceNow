@@ -105,7 +105,7 @@ Once the body of the post is formatted, a simple request call is made to the Ser
 #### 3. Create CBC Notification
  * Navigate in CBC Console to **Settings > Notifications > Add Notification**
  * Set-up desired notification
-   * You must make **both** an alert for Cb Standard and Cb Enterprise EDR, if you want to be alerted on both products
+   * You must make a notfication based a desired **threshold** to get alerts from both CB Standard and Enterprise EDR in one notification
  * Under “How do you want to be notified?” Select SIEM connector made in step 1, under API Keys
 ​
 #### 4. Configure API Credentials File
