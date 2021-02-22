@@ -75,11 +75,7 @@ def main():
                     device_in_ip = data['deviceInfo']['internalIpAddress']
                     device_policy = data['deviceInfo']['groupName']
                     device_user = data['deviceInfo']['email']
-
-                    if data['deviceInfo']['deviceType'] == "WINDOWS":
-                        device_type = data['deviceInfo']['deviceVersion']
-                    else:
-                        device_type = data['deviceInfo']['deviceType']
+                    device_type = data['deviceInfo']['deviceType']
 
 
                     # App Info of Primary Actor in Alert
@@ -175,10 +171,7 @@ def main():
                     device_in_ip = data['deviceInfo']['internalIpAddress']
                     device_policy = data['deviceInfo']['groupName']
                     device_user = data['deviceInfo']['email']
-                    if data['deviceInfo']['deviceType'] == "WINDOWS":
-                        device_type = data['deviceInfo']['deviceVersion']
-                    else:
-                        device_type = data['deviceInfo']['deviceType']
+                    device_type = data['deviceInfo']['deviceType']
 
                     # App Info of Primary Actor in Alert
                     actor_hash = data['threatHunterInfo']['threatCause']['actor']
